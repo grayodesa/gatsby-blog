@@ -29,7 +29,7 @@ module.exports = {
         url: `https://blognot.co/graphql`,
         type: {
           Category: {
-            limit: 10
+            limit: 10,
           },
         },
         schema: {
