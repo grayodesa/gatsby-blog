@@ -31,10 +31,13 @@ module.exports = {
           Category: {
             limit: 10,
           },
+          Tag: {
+            limit: 30,
+          },
         },
         schema: {
           perPage: 50,
-          timeout: 120000,
+          timeout: 180000,
         },
       },
     },
