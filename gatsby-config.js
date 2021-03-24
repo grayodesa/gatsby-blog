@@ -29,15 +29,11 @@ module.exports = {
         url: `https://blognot.co/graphql`,
         verbose: true,
         type: {
-          Category: {
-            limit: 1,
-          },
-          Tag: {
-            limit: 30,
-          },
+           __all: {
+                limit: 50,
         },
         schema: {
-          perPage: 20,
+          perPage: 50,
           timeout: 180000,
           requestConcurrency: 5
         },
