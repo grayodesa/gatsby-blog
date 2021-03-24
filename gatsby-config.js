@@ -31,6 +31,7 @@ module.exports = {
         type: {
            __all: {
                 limit: 50,
+           },
         },
         schema: {
           perPage: 50,
