@@ -30,7 +30,7 @@ module.exports = {
         verbose: true,
         type: {
            __all: {
-                limit: 100,
+                limit: 50,
            },
         },
         schema: {
