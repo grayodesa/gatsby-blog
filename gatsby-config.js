@@ -30,7 +30,7 @@ module.exports = {
           process.env.WPGRAPHQL_URL ||
           `https://blognot.co/graphql`,
         schema: {
-          perPage: 50,
+          perPage: 25,
           timeout: 120000,
         }
       },
