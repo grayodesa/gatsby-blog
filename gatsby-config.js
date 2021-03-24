@@ -55,6 +55,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `assets`,
         path: `${__dirname}/content/assets`,
       },
@@ -118,6 +125,20 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-lodash`,
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT, // add your MC list endpoint here; see instructions below
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      //add your instagram username, access_token and id below
+      options: {
+        username: process.env.INSTAGRAM_USER_NAME_ID,
+        access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+      },
     },
     /**
      * The following two plugins are required if you want to use Gatsby image
