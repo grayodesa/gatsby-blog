@@ -32,7 +32,7 @@ module.exports = {
         schema: {
           perPage: 25,
           timeout: 120000,
-        }
+        },
       },
     },
 
