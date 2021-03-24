@@ -27,17 +27,19 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url: `https://blognot.co/graphql`,
+        verbose: true,
         type: {
           Category: {
-            limit: 10,
+            limit: 1,
           },
           Tag: {
             limit: 30,
           },
         },
         schema: {
-          perPage: 50,
+          perPage: 20,
           timeout: 180000,
+          requestConcurrency: 5
         },
       },
     },
